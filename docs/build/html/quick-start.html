@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Краткое введение в IRC и KVIrc &mdash; Документация Руководство по IRC 1</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Документация Руководство по IRC 1" href="index.html"/>
+        <link rel="next" title="Список используемых источников" href="bibliography.html"/>
+        <link rel="prev" title="Руководство по IRC" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Руководство по IRC
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Краткое введение в IRC и KVIrc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#irc-internet-relay-chat">IRC (Internet Relay Chat)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">IRC-клиент KVIrc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Основные возможности KVIrc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Работа с KVIrc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Получение</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Установка</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Первый запуск и первичная найстройка KVIrc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Выбор, настройка и вход на серверы (в сети)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">Интерфейс KVIrc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Сообщения</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Команды</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Работа со строкой ввода</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Информация о пользователе</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Вход на каналы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Логи каналов и приватных бесед</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Всплывающие подсказки</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Список используемых источников</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Руководство по IRC</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Краткое введение в IRC и KVIrc</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/quick-start.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="irc-kvirc">
+<span id="quick-start"></span><h1><a class="toc-backref" href="#id48">Краткое введение в IRC и KVIrc</a><a class="headerlink" href="#irc-kvirc" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">Оглавление</p>
+<ul class="simple">
+<li><a class="reference internal" href="#irc-kvirc" id="id48">Краткое введение в IRC и KVIrc</a><ul>
+<li><a class="reference internal" href="#irc-internet-relay-chat" id="id49">IRC (Internet Relay Chat)</a></li>
+<li><a class="reference internal" href="#id2" id="id50">IRC-клиент KVIrc</a><ul>
+<li><a class="reference internal" href="#id3" id="id51">Основные возможности KVIrc</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4" id="id52">Работа с KVIrc</a><ul>
+<li><a class="reference internal" href="#id5" id="id53">Получение</a></li>
+<li><a class="reference internal" href="#id7" id="id54">Установка</a></li>
+<li><a class="reference internal" href="#id8" id="id55">Первый запуск и первичная найстройка KVIrc</a></li>
+<li><a class="reference internal" href="#id9" id="id56">Выбор, настройка и вход на серверы (в сети)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id10" id="id57">Интерфейс KVIrc</a><ul>
+<li><a class="reference internal" href="#id11" id="id58">Сообщения</a></li>
+<li><a class="reference internal" href="#id12" id="id59">Команды</a></li>
+<li><a class="reference internal" href="#id15" id="id60">Работа со строкой ввода</a></li>
+<li><a class="reference internal" href="#id16" id="id61">Информация о пользователе</a></li>
+<li><a class="reference internal" href="#id17" id="id62">Вход на каналы</a></li>
+<li><a class="reference internal" href="#id18" id="id63">Логи каналов и приватных бесед</a></li>
+<li><a class="reference internal" href="#id19" id="id64">Всплывающие подсказки</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="irc-internet-relay-chat">
+<h2><a class="toc-backref" href="#id49">IRC (Internet Relay Chat)</a><a class="headerlink" href="#irc-internet-relay-chat" title="Ссылка на этот заголовок">¶</a></h2>
+<p>IRC (<em>англ.</em> Internet Relay Chat) — протокол прикладного уровня для обмена сообщениями в режиме реального времени.</p>
+<p>Разработан в основном для группового общения, также позволяет общаться через личные сообщения и обмениваться данными, в том числе файлами.</p>
+<p>Согласно спецификациям протокола, IRC-сеть — это группа серверов, соединённых между собой. Простейшей сетью является одиночный сервер.</p>
+<p>Сеть должна иметь вид связного дерева, в котором каждый <em>сервер</em> является центральным узлом для остальной части сети.</p>
+<p><em>Клиентом</em> азывается всё, что подключено к серверу, кроме других серверов.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p>Подробнее об IRC можно прочитать в следюущих статьях:</p>
+<ul class="last simple">
+<li><a class="reference external" href="https://ru.wikipedia.org/wiki/IRC">Википедия: IRC</a></li>
+<li><a class="reference external" href="http://www.ircnet.ru/about_irc.html">IrcNet.ru: Об IRC</a></li>
+<li><a class="reference external" href="http://dreamterra.net/IRCdocs/AboutIRC">Dreamterra: Что такое IRC, знакомство с понятием IRC-чатов</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id50">IRC-клиент KVIrc</a><a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>KVIrc — свободный и бесплатный IRC-клиент с открытым исходным кодом. Клиент доступен для операционных систем GNU/Linux, Windows и Mac OS X. Распространяется на условях лицензии — <a class="reference external" href="https://ru.wikipedia.org/wiki/GNU_General_Public_License">GNU General Public License</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Подробнее о KVIrc можно прочитать в статье <a class="reference external" href="http://www.kvirc.ru/wiki/KVIrc">О KVIrc</a></p>
+</div>
+<div class="section" id="id3">
+<h3><a class="toc-backref" href="#id51">Основные возможности KVIrc</a><a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
+<ul class="simple">
+<li>Многоязычный интерфейс;</li>
+<li>Поддержка тем оформления (скинов), создание тем пользователем;</li>
+<li>Индикация активности IRC;</li>
+<li>Полная совместимость ядра с Unicode UTF-8;</li>
+<li>Использование <abbr title="secure sockets layer — уровень защищённых сокетов">SSL</abbr>, включая <abbr title="Internet Protocol version 6">IPv6</abbr> и <abbr title="Direct Client-to-Client">DCC</abbr>;</li>
+<li>Шифрование (можно использовать на каналах, в привате или в DCC);</li>
+<li>Поддержка модульных расширений подгружаемых и выгружаемых по надобности;</li>
+<li>Неограниченная возможность расширения за счёт универсального <abbr title="API">API</abbr>;</li>
+<li>Поддержка одновременного соединения с различными IRC-серверами с различной конфигурацией профиля;</li>
+<li>Упаковка логов в фоновом режиме;</li>
+<li>Интегрированный движок скриптинга;</li>
+<li>Возможность использования объектно-ориентированного программирования.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id52">Работа с KVIrc</a><a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id53">Получение</a><a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h3>
+<p>KVIrc распространяется абсолютно бесплатно и доступен на официальном сайте <a class="reference external" href="http://www.kvirc.ru/wiki/Скачать">http://www.kvirc.ru/wiki/Скачать</a>. Текущая версия: <code class="docutils literal"><span class="pre">KVIrc</span> <span class="pre">4.2.0</span> <span class="pre">Equilibrium</span></code>.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Совет</p>
+<p class="last">Всегда скачивайте <a class="reference external" href="https://ru.wikipedia.org/wiki/Свободное_программное_обеспечение">свободные программы</a> только с официальных сайтов.</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h3><a class="toc-backref" href="#id54">Установка</a><a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Запустите загруженный exe-файл. На первом шаге установщик предложит выбрать язык локализации интерфейса KVIrc</p>
+<div class="figure align-center" id="id20">
+<a class="reference internal image-reference" href="_images/kvirc-start-001.png"><img alt="Рис. 1 – Выбор языка локализации интерфейса KVIrc" src="_images/kvirc-start-001.png" style="width: 250px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 1 – Выбор языка локализации интерфейса KVIrc</span></p>
+</div>
+<p>На втором шаге выводится лицензионное соглашение и предложение <em>Принять</em> его.</p>
+<div class="figure align-center" id="id21">
+<a class="reference internal image-reference" href="_images/kvirc-start-002.png"><img alt="Рис. 2 – Лицензионное соглашение KVIrc" src="_images/kvirc-start-002.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 2 – Лицензионное соглашение KVIrc</span></p>
+</div>
+<p>На третьем шаге выбираются компоненты для установки. Поставьте галочку напротив пункта <em>Автозапуск</em>.</p>
+<div class="figure align-center" id="id22">
+<a class="reference internal image-reference" href="_images/kvirc-start-003.png"><img alt="Рис. 3 – Выбор компонентов KVIrc для установки" src="_images/kvirc-start-003.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 3 – Выбор компонентов KVIrc для установки</span></p>
+</div>
+<p>На четвертом шаге можно задать папку для установки KVIrc или использовать папку по умолчанию.</p>
+<div class="figure align-center" id="id23">
+<a class="reference internal image-reference" href="_images/kvirc-start-004.png"><img alt="Рис. 4 – Выбор папки для установки KVIrc" src="_images/kvirc-start-004.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 4 – Выбор папки для установки KVIrc</span></p>
+</div>
+<p>Далее будет выполнена установка KVIrc в папку, указанную на предыдущем шаге.</p>
+<div class="figure align-center" id="id24">
+<a class="reference internal image-reference" href="_images/kvirc-start-006.png"><img alt="Рис. 5 – Процесс установки KVIrc" src="_images/kvirc-start-006.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 5 – Процесс установки KVIrc</span></p>
+</div>
+<p>После установки будет выведено окно с предложением запустить KVIrc. Поставьте галочку напротив пункта <em>Запустить KVIrc</em></p>
+<div class="figure align-center" id="id25">
+<a class="reference internal image-reference" href="_images/kvirc-start-007.png"><img alt="Рис. 6 – Запуск KVIrc после установки" src="_images/kvirc-start-007.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 6 – Запуск KVIrc после установки</span></p>
+</div>
+</div>
+<div class="section" id="id8">
+<h3><a class="toc-backref" href="#id55">Первый запуск и первичная найстройка KVIrc</a><a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h3>
+<p>При первом запуске KVIrc выводится ряд диалоговых окон, позволяющих настроить параметры по умолчанию. Все параметры могут быть изменены позже.</p>
+<div class="figure align-center" id="id26">
+<a class="reference internal image-reference" href="_images/kvirc-start-008.png"><img alt="Рис. 7 – Экран приветствия" src="_images/kvirc-start-008.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 7 – Экран приветствия</span></p>
+</div>
+<div class="figure align-center" id="id27">
+<a class="reference internal image-reference" href="_images/kvirc-start-009.png"><img alt="Рис. 8 – Лицензионные условия" src="_images/kvirc-start-009.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 8 – Лицензионные условия</span></p>
+</div>
+<p>На следующем шаге предлагается изменить стандартные папки для хранения файлов конфигурации и скачанных файлов. Данные параметры можно оставить по умолчанию.</p>
+<div class="figure align-center" id="id28">
+<a class="reference internal image-reference" href="_images/kvirc-start-010.png"><img alt="Рис. 9 – Выбор папки для хранения файлов конфигурации и скачанных файлов" src="_images/kvirc-start-010.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 9 – Выбор папки для хранения файлов конфигурации и скачанных файлов</span></p>
+</div>
+<p>Введите свои данные. В качестве Ника можно использовать кириллические имена. Ники разделенные пробелами необходимо записывать через символ нижнего подчеркивания.</p>
+<p>Данное диалогове окно не является регистрацией логинов в сети. Все поля могут быть изменены в любой момент.</p>
+<div class="figure align-center" id="id29">
+<a class="reference internal image-reference" href="_images/kvirc-start-011.png"><img alt="Рис. 10 – Ввод информации о пользователе" src="_images/kvirc-start-011.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 10 – Ввод информации о пользователе</span></p>
+</div>
+<p>KVIrc обладает гибкими настройками тем оформления и позволяет изменить практически любой элемент интерфейса. В интернете можно найти множество готовых тем оформления или создать тему самостоятельно.</p>
+<p>На данном шаге выберите стандартную тему.</p>
+<div class="figure align-center" id="id30">
+<a class="reference internal image-reference" href="_images/kvirc-start-012.png"><img alt="Рис. 11 – Выбор темы оформления" src="_images/kvirc-start-012.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 11 – Выбор темы оформления</span></p>
+</div>
+<p>Финальное окно первичной настроки. Установите галочку напротив <em>Сделать KVIrc IRC клиентом по умолчанию</em>.</p>
+<div class="figure align-center" id="id31">
+<a class="reference internal image-reference" href="_images/kvirc-start-013.png"><img alt="Рис. 12 – Выбор темы оформления" src="_images/kvirc-start-013.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 12 – Выбор темы оформления</span></p>
+</div>
+<p>Настройка KVIrc закончена и он готов к использованию.</p>
+</div>
+<div class="section" id="id9">
+<h3><a class="toc-backref" href="#id56">Выбор, настройка и вход на серверы (в сети)</a><a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h3>
+<p>При входе в KVIrc появляется диалоговое окно выбора серверов (сетей), если не снята галочка <em>Показать этот диалог при старте</em>. Для удобства лучше снять данный маркер, так как далее будет настроен автоматический вход на конкретные сервера.</p>
+<p>IRC-сети состоят из набора серверов. В KVIrc есть возможность работать одновременно с разными IRC-сетями и под разными никами.</p>
+<div class="figure align-center" id="id32">
+<a class="reference internal image-reference" href="_images/kvirc-start-014.png"><img alt="Рис. 13 – Выбор сети" src="_images/kvirc-start-014.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 13 – Выбор сети</span></p>
+</div>
+<p>Для примера настроим подключение к сети <code class="docutils literal"><span class="pre">IrcNet.ru</span></code>, для этого необходимо воспользоваться <em>Фильтром</em>.</p>
+<p>После того, как сеть найдена, нажмите на кнопку <em>Дополнительно</em>.</p>
+<div class="figure align-center" id="id33">
+<a class="reference internal image-reference" href="_images/kvirc-start-019.png"><img alt="Рис. 14 – Поиск сети и дополнительная настройка" src="_images/kvirc-start-019.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 14 – Поиск сети и дополнительная настройка</span></p>
+</div>
+<p>В дополнительных параметрах сети можно выполнить различные настройки для каждой из сетей.</p>
+<p>На вкладке <em>Идентификация</em> можно перезадать стандартные глобальные личные данные для данной IRC-сети. Если оставить поля пустыми, то будут использованы данные по умолчанию, заданные при первом запуске KVIrc.</p>
+<div class="figure align-center" id="id34">
+<a class="reference internal image-reference" href="_images/kvirc-start-016.png"><img alt="Рис. 15 – Параметры идентификации в сети" src="_images/kvirc-start-016.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 15 – Параметры идентификации в сети</span></p>
+</div>
+<p>На вкладке <em>Соединение</em> настраиваются параметры соединения. Установите флаг <em>Подключаться к этому серверу при старте</em>.</p>
+<div class="figure align-center" id="id35">
+<a class="reference internal image-reference" href="_images/kvirc-start-017.png"><img alt="Рис. 16 – Автоматическое подключение к сети при старте" src="_images/kvirc-start-017.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 16 – Автоматическое подключение к сети при старте</span></p>
+</div>
+<p>На вкладке <em>Входить на каналы</em> устанавливаются каналы (они же комнаты или групповые чаты), на которые будет осуществляться автоматический вход при подключении к данному серверу.</p>
+<p>В левом нижнем поле вводится название канала, которое предваряетяс символом решетки <code class="docutils literal"><span class="pre">#</span></code>. В правом нижнем окне вводится пароль для канала, если он установлен.</p>
+<div class="figure align-center" id="id36">
+<a class="reference internal image-reference" href="_images/kvirc-start-018.png"><img alt="Рис. 17 – Автоматический вход на каналы" src="_images/kvirc-start-018.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 17 – Автоматический вход на каналы</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Сущность IRC каналов такова, что они создаются в момент, когда туда заходит первый пользователь и удаляются, когда все пользователи его покинули. <em>Подробнее каналы и работа с ними рассматриваются позже</em>.</p>
+</div>
+<p>После настройки дополнительных параметров нажмите <em>Ок</em>. В диалоге <em>Список серверов</em> нажмите синию кнопку <em>Подключиться сейчас</em>.</p>
+<div class="figure align-center" id="id37">
+<a class="reference internal image-reference" href="_images/kvirc-start-019.png"><img alt="Рис. 18 – Подключение к серверам" src="_images/kvirc-start-019.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 18 – Подключение к серверам</span></p>
+</div>
+<p>После подключения диалог <em>Список серверов</em> можно закрыть. В главном окне KVIrc будет выведена информация о подключении и осуществлен автоматический заход на указанные каналы.</p>
+<p>После подключения диалог <em>Список серверов</em> можно закрыть. В главном окне KVIrc будет выведена информация о подключении и осуществлен автоматический заход на указанные каналы.</p>
+<div class="figure align-center" id="id38">
+<a class="reference internal image-reference" href="_images/kvirc-start-022.png"><img alt="Рис. 19 – Окно *Консоли*" src="_images/kvirc-start-022.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 19 – Окно <em>Консоли</em></span></p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2><a class="toc-backref" href="#id57">Интерфейс KVIrc</a><a class="headerlink" href="#id10" title="Ссылка на этот заголовок">¶</a></h2>
+<p>На рисунке 19 показано окно <em>Консоли</em>, оно появляется, если нажать в левом фрейме на название IRC-сети. В <em>Консоле</em> выводится информации о соединении с сервером, а также объявления администрации сервера.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Порядок расположения фреймов, меню, иконок и окон можное изменять.</p>
+</div>
+<p>Также слева отображаются все подключенные каналы и другие сети. Также там появляются ссылки на окна настройки, браузер логов и т.д.</p>
+<p>При нажатии на названии канала открывается окно канала.</p>
+<div class="figure align-center" id="id39">
+<a class="reference internal image-reference" href="_images/kvirc-start-020.png"><img alt="Рис. 20 – Окно *Канала*" src="_images/kvirc-start-020.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 20 – Окно <em>Канала</em></span></p>
+</div>
+<p>В окне канала в центре находится сам чат, в который поступают собщения от всех пользователей. Также туда могут попадать приватные сообщения (они посылаются определенной управляющей командой) и технические сообщения (например, о заходе/выходе какго-либо участника на канал).</p>
+<p>В KVIrc есть возможность разделить окно чата по вертикали, чтобы в верхнем фрейме отображались технические сообщения, а в нижнем непосредственно сообщения участников. Делается это с помощью скрывающихся панелей, они обозначены треугольником.</p>
+<div class="figure align-center" id="id40">
+<span id="kvirc-start-021"></span><a class="reference internal image-reference" href="_images/kvirc-start-021.png"><img alt="Рис. 21 – Скрывающиеся панели и раздельный вид чата" src="_images/kvirc-start-021.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 21 – Скрывающиеся панели и раздельный вид чата</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Размер фреймов можно изменять.</p>
+</div>
+<div class="section" id="id11">
+<h3><a class="toc-backref" href="#id58">Сообщения</a><a class="headerlink" href="#id11" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Напишем сообщение в общий чат. Все сообщения вводятся в нижнее текстовое поле. Введем сообщение и нажмем клавишу <code class="docutils literal"><span class="pre">Enter</span></code>.</p>
+<div class="figure align-center" id="id41">
+<a class="reference internal image-reference" href="_images/kvirc-start-023.png"><img alt="Рис. 22 – Ввод сообщения для общего чата" src="_images/kvirc-start-023.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 22 – Ввод сообщения для общего чата</span></p>
+</div>
+<p>В общий чат будет отправлено сообщение. В чате фиксируется время отправки и ник отправителя. Напротив собственного сообщения, отправленного от первого лица, ставится иконка-облачко.</p>
+<div class="figure align-center" id="id42">
+<a class="reference internal image-reference" href="_images/kvirc-start-024.png"><img alt="Рис. 23 – Ввод сообщения для общего чата" src="_images/kvirc-start-024.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 23 – Ввод сообщения для общего чата</span></p>
+</div>
+<p>Ответ других участников также отображается в общем окне чата.</p>
+<div class="figure align-center" id="id43">
+<a class="reference internal image-reference" href="_images/kvirc-start-025.png"><img alt="Рис. 24 – Ответ других участников" src="_images/kvirc-start-025.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 24 – Ответ других участников</span></p>
+</div>
+</div>
+<div class="section" id="id12">
+<h3><a class="toc-backref" href="#id59">Команды</a><a class="headerlink" href="#id12" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Помимо обычного текста в нижнее текстовое поле можно вводить еще и различные IRC-команды. На самом деле, это не просто текстовое поле, а интерактивная командная строка. Помимо сообщений и IRC-команд, туда можно вводить скриптовые команды, предусмотренные самим KVIrc.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">ПОдробнее о командной строке смотрите <a class="reference external" href="http://www.kvirc.ru/wiki/FAQ#.D0.A7.D1.82.D0.BE_.D0.B7.D0.BD.D0.B0.D1.87.D0.B8.D1.82_.D0.BA.D0.BD.D0.BE.D0.BF.D0.BA.D0.B0_.22.D0.BA.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D0.BD.D0.B0.D1.8F_.D1.81.D1.82.D1.80.D0.BE.D0.BA.D0.B0_.D0.B2_.D0.B4.D1.80.D1.83.D0.B6.D0.B5.D1.81.D1.82.D0.B2.D0.B5.D0.BD.D0.BD.D0.BE.D0.BC_.D1.80.D0.B5.D0.B6.D0.B8.D0.BC.D0.B5.22.3F">Командная строка в дружественном режиме</a></p>
+</div>
+<p>IRC-команды предваряются символом косой черты <code class="docutils literal"><span class="pre">/</span></code>. С набором IRC-команд можно ознакомиться в статье <a class="reference external" href="https://ru.wikipedia.org/wiki/IRC#.D0.9A.D0.BE.D0.BC.D0.B0.D0.BD.D0.B4.D1.8B">Википедия: Команды IRC</a>.</p>
+<p>Введем для примера сообщения от 3-го лица <code class="docutils literal"><span class="pre">/me</span> <span class="pre">Читаю</span> <span class="pre">инструкцию</span> <span class="pre">по</span> <span class="pre">KVIrc</span></code>.</p>
+<div class="figure align-center" id="id44">
+<a class="reference internal image-reference" href="_images/kvirc-start-026.png"><img alt="Рис. 25 – Ввод команд" src="_images/kvirc-start-026.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 25 – Ввод команд</span></p>
+</div>
+</div>
+<div class="section" id="id15">
+<h3><a class="toc-backref" href="#id60">Работа со строкой ввода</a><a class="headerlink" href="#id15" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Строка ввода обладает еще несколькими удобными функциями — автодополнение и история.</p>
+<p>Допустим, мы хотим публично обратиться к одному из участников общего чата. Данное сообщение также будет видно всем участникам, но в начале нашего сообщения будет стоять ник того, к кому мы обращаемя. Не нужно вводить весь ник вручную, достаточно будет ввести несколько букв и нажать клавишу <code class="docutils literal"><span class="pre">Tab</span></code>.</p>
+<div class="figure align-center" id="id45">
+<a class="reference internal image-reference" href="_images/kvirc-start-027.png"><img alt="Рис. 26 – Автодополнение клавишей ``Tab``" src="_images/kvirc-start-027.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 26 – Автодополнение клавишей <code class="docutils literal"><span class="pre">Tab</span></code></span></p>
+</div>
+<p>На следующем снимке экрана видно, что произошло автодополнение имени. Если введенной последовательности символов будет соответствовать несколько ников, то при повторном нажатии клавиши <code class="docutils literal"><span class="pre">Tab</span></code> будет произведен перебор подходящих под последовательность ников.</p>
+<p>Автозаполнение действует не только для ников, но и для команд. Так что, если вы забыли какую-либо команду, достаточно ввести первые несколько символов, нажать <code class="docutils literal"><span class="pre">Tab</span></code> и программа сама выдаст подсказку.</p>
+<p>Обращаться можно одновременно к нескольким учатсников, для этого достаточно ввести несколько ников подряд, разделяя их пробелами.</p>
+<div class="figure align-center" id="id46">
+<a class="reference internal image-reference" href="_images/kvirc-start-028.png"><img alt="Рис. 27 – Обращение к нескольким участникам" src="_images/kvirc-start-028.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 27 – Обращение к нескольким участникам</span></p>
+</div>
+<p>Другая функция строки ввода — история введенных команд. Установите курсор в строку ввода и нажимайте стрелки вверхвниз на клавиатуре.</p>
+</div>
+<div class="section" id="id16">
+<h3><a class="toc-backref" href="#id61">Информация о пользователе</a><a class="headerlink" href="#id16" title="Ссылка на этот заголовок">¶</a></h3>
+<p>При наведении курсора на ник пользователя, появляется подсказка с его полными данными, статусом и списком каналов, в которых он находится.</p>
+<div class="figure align-center" id="id47">
+<a class="reference internal image-reference" href="_images/kvirc-start-029.png"><img alt="Рис. 28 – Информация о пользователе" src="_images/kvirc-start-029.png" style="width: 350px;" /></a>
+<p class="caption"><span class="caption-text">Рис. 28 – Информация о пользователе</span></p>
+</div>
+</div>
+<div class="section" id="id17">
+<h3><a class="toc-backref" href="#id62">Вход на каналы</a><a class="headerlink" href="#id17" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Чтобы войти на канал, достаточно ввести в строку ввода команду <code class="docutils literal"><span class="pre">/join</span> <span class="pre">#имя_канала</span></code> или воспользоваться диалогом <em>Инструменты&gt;Зайти на каналы</em>. Название канала начинается с символа решетки <code class="docutils literal"><span class="pre">#</span></code>.</p>
+<p>В левом фрейме перед названием канала может отображаться символ <code class="docutils literal"><span class="pre">&#64;</span></code>, это означает, что вы являетесь оператором данного канала (он же администратор).</p>
+</div>
+<div class="section" id="id18">
+<h3><a class="toc-backref" href="#id63">Логи каналов и приватных бесед</a><a class="headerlink" href="#id18" title="Ссылка на этот заголовок">¶</a></h3>
+<p>KVIrc позволяет вести логи всех каналов и приватных бесед, но есть возможность и отключить логирование (см. <a class="reference internal" href="#kvirc-start-021"><span>Рис. 21 – Скрывающиеся панели и раздельный вид чата</span></a>). В KVIrc имеется удобный браузер логов (<em>Инструменты &gt; Browser Log Files</em>).</p>
+</div>
+<div class="section" id="id19">
+<h3><a class="toc-backref" href="#id64">Всплывающие подсказки</a><a class="headerlink" href="#id19" title="Ссылка на этот заголовок">¶</a></h3>
+<p>При наведении на любую из кнопок в интерфейсе KVIrc появляются всплывающие подсказки, описывающие функции данной кнопки. Не бойтесь жать на правые и левые кнопки мыши. Практически везде есть дополнительные выпадающие меню с набором функций.</p>
+<p>Любое меню или панели могут быть изменены и натсроены под индивидуальные задачи.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bibliography.html" class="btn btn-neutral float-right" title="Список используемых источников" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Руководство по IRC" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Dmitry Mazhartsev.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
